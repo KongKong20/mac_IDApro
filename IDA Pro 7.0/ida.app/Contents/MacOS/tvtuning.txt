@@ -1,0 +1,55 @@
+
+ Client name | Terminal   | TVOPT  | Client settings
+ ------------|------------|--------|---------------------------------------
+             |            |        |
+ SecureCRT   |xterm-scokey| xtrack | Emulation->Terminal: xterm,
+             |            |        | Emulation->keyboard: either the
+             |            |        |   built-in keyboard, either custom
+             |            |        |                  'xt-sco.key' file
+             |            |        | Advanced->Terminaltype: xterm-scokey
+             |            |        |
+ SecureCRT   |   xterm    | xtrack | Emulation->Terminal: xterm+internal kbd
+             |            |        |
+             |            |        |
+ Putty       |xterm-scokey|   -    | Terminal,Keyboard: Control?, Standard,
+             |            |        |                    SCO, Normal, Normal
+             |            |        |
+ Putty       |   xterm    |   -    | Terminal,Keyboard: ControlH, Standard,
+             |            |        |                    ~num, Normal, Normal
+             |            |        |
+ Console     |   linux    |   -    | default
+             |            |        |
+ X11:xterm   |   xterm    |   -    | default
+
+We recommend to use the 'xterm-scokey' terminal type for remote clients.
+
+When the terminal type is xterm-scokey then add to /etc/inputrc
+(or to ~/.inputrc) the following string:
+
+"\e[.": delete char
+
+When working on the console without GPM installed, append "noGPM" to TVOPT.
+
+Russian users should append the following settings to the above:
+
+                  | _APPEND_  TO TVOPT  | _APPEND_ TO Client Settings
+ -----------------|---------------------|----------------------------
+ Console          | alt866,cyrcvt=linux |
+                  |                     |
+ X11              | cyrcvt=linux        |
+                  |                     |
+ Putty            | cyrcvt=linux        | Window,Translation: use font in
+                  |                     |           both ANSI and OEM modes
+                  |                     |
+ SecureCRT        |                     |
+   with koi8font  |                     |
+    and kbd-hook  | cyrcvt=linux        |
+    with koi8font | cyrcvt=kwin         |
+   with ANSI-font | cyrcvt=windows      |
+                  |                     |
+    The best settings for russian users on the console are:
+         setfont alt-8x16.psf.gz -m koi2al
+         loadkey ru-ms.map
+         export TVOPT=cyrcvt=linux,alt866
+
+

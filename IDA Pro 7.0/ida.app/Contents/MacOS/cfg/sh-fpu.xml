@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- Copyright (C) 2007-2015 Free Software Foundation, Inc.
+
+     Copying and distribution of this file, with or without modification,
+     are permitted in any medium without royalty provided the copyright
+     notice and this notice are preserved.  -->
+
+<!DOCTYPE feature SYSTEM "gdb-target.dtd">
+<feature name="org.gnu.gdb.power.fpu" idatitle="FPU registers">
+  <reg name="fpul" bitsize="32" group="float" regnum="23"/>
+  <reg name="fpscr" bitsize="32" group="float" regnum="24"/>
+  <!-- floating point registers 25 - 40 -->
+  <reg name="fr0" bitsize="64" type="ieee_double" regnum="25"/>
+  <reg name="fr1" bitsize="64" type="ieee_double"/>
+  <reg name="fr2" bitsize="64" type="ieee_double"/>
+  <reg name="fr3" bitsize="64" type="ieee_double"/>
+  <reg name="fr4" bitsize="64" type="ieee_double"/>
+  <reg name="fr5" bitsize="64" type="ieee_double"/>
+  <reg name="fr6" bitsize="64" type="ieee_double"/>
+  <reg name="fr7" bitsize="64" type="ieee_double"/>
+  <reg name="fr8" bitsize="64" type="ieee_double"/>
+  <reg name="fr9" bitsize="64" type="ieee_double"/>
+  <reg name="fr10" bitsize="64" type="ieee_double"/>
+  <reg name="fr11" bitsize="64" type="ieee_double"/>
+  <reg name="fr12" bitsize="64" type="ieee_double"/>
+  <reg name="fr13" bitsize="64" type="ieee_double"/>
+  <reg name="fr14" bitsize="64" type="ieee_double"/>
+  <reg name="fr15" bitsize="64" type="ieee_double"/>
+</feature>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- Copyright (C) 2007, 2008, 2009 Free Software Foundation, Inc.
+
+     Copying and distribution of this file, with or without modification,
+     are permitted in any medium without royalty provided the copyright
+     notice and this notice are preserved.  -->
+
+<!DOCTYPE feature SYSTEM "gdb-target.dtd">
+<feature name="org.gnu.gdb.mips.cpu" idatitle="General registers">
+  <reg name="zero" bitsize="64" type="data_ptr" regnum="0"/>
+  <reg name="at" bitsize="64" type="data_ptr"/>
+  <reg name="v0" bitsize="64" type="data_ptr"/>
+  <reg name="v1" bitsize="64" type="data_ptr"/>
+  <reg name="a0" bitsize="64" type="data_ptr"/>
+  <reg name="a1" bitsize="64" type="data_ptr"/>
+  <reg name="a2" bitsize="64" type="data_ptr"/>
+  <reg name="a3" bitsize="64" type="data_ptr"/>
+  <reg name="t0" bitsize="64" type="data_ptr"/>
+  <reg name="t1" bitsize="64" type="data_ptr"/>
+  <reg name="t2" bitsize="64" type="data_ptr"/>
+  <reg name="t3" bitsize="64" type="data_ptr"/>
+  <reg name="t4" bitsize="64" type="data_ptr"/>
+  <reg name="t5" bitsize="64" type="data_ptr"/>
+  <reg name="t6" bitsize="64" type="data_ptr"/>
+  <reg name="t7" bitsize="64" type="data_ptr"/>
+  <reg name="s0" bitsize="64" type="data_ptr"/>
+  <reg name="s1" bitsize="64" type="data_ptr"/>
+  <reg name="s2" bitsize="64" type="data_ptr"/>
+  <reg name="s3" bitsize="64" type="data_ptr"/>
+  <reg name="s4" bitsize="64" type="data_ptr"/>
+  <reg name="s5" bitsize="64" type="data_ptr"/>
+  <reg name="s6" bitsize="64" type="data_ptr"/>
+  <reg name="s7" bitsize="64" type="data_ptr"/>
+  <reg name="t8" bitsize="64" type="data_ptr"/>
+  <reg name="t9" bitsize="64" type="data_ptr"/>
+  <reg name="k0" bitsize="64" type="data_ptr"/>
+  <reg name="k1" bitsize="64" type="data_ptr"/>
+  <reg name="gp" bitsize="64" type="data_ptr"/>
+  <reg name="sp" bitsize="64" type="stack_ptr"/>
+  <reg name="s8" bitsize="64" type="data_ptr"/>
+  <reg name="ra" bitsize="64" type="data_ptr"/>
+
+  <reg name="lo" bitsize="64" regnum="33"/>
+  <reg name="hi" bitsize="64" regnum="34"/>
+  <reg name="pc" bitsize="64" regnum="37" type="code_ptr"/>
+</feature>

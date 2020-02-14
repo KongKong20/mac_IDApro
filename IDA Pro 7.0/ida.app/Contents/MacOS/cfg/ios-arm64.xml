@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<target version="1.0">
+<feature name="com.apple.debugserver.arm64">
+  <!--General Purpose Registers-->
+  <reg name="x0" regnum="0" offset="0" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x1" regnum="1" offset="8" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x2" regnum="2" offset="16" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x3" regnum="3" offset="24" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x4" regnum="4" offset="32" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x5" regnum="5" offset="40" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x6" regnum="6" offset="48" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x7" regnum="7" offset="56" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x8" regnum="8" offset="64" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x9" regnum="9" offset="72" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x10" regnum="10" offset="80" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x11" regnum="11" offset="88" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x12" regnum="12" offset="96" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x13" regnum="13" offset="104" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x14" regnum="14" offset="112" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x15" regnum="15" offset="120" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x16" regnum="16" offset="128" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x17" regnum="17" offset="136" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x18" regnum="18" offset="144" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x19" regnum="19" offset="152" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x20" regnum="20" offset="160" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x21" regnum="21" offset="168" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x22" regnum="22" offset="176" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x23" regnum="23" offset="184" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x24" regnum="24" offset="192" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x25" regnum="25" offset="200" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x26" regnum="26" offset="208" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x27" regnum="27" offset="216" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="x28" regnum="28" offset="224" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="fp" ida_name="x29" regnum="29" offset="232" bitsize="64" group="general" type="frame_ptr"/>
+  <reg name="lr" ida_name="x30" regnum="30" offset="240" bitsize="64" group="general" type="data_ptr"/>
+  <reg name="sp" regnum="31" offset="248" bitsize="64" group="general" type="stack_ptr"/>
+  <reg name="pc" regnum="32" offset="256" bitsize="64" group="general" type="code_ptr"/>
+  <flags id="arm_cpsr" size="4" group="general">
+    <field name="MODE" start="0" end="4"/>
+    <field name="T" start="5" end="5"/>
+    <field name="F" start="6" end="6"/>
+    <field name="I" start="7" end="7"/>
+    <field name="A" start="8" end="8"/>
+    <field name="E" start="9" end="9"/>
+    <field name="IT" start="10" end="15"/>
+    <field name="GE" start="16" end="19"/>
+    <field name="J" start="24" end="24"/>
+    <field name="IT2" start="25" end="26"/>
+    <field name="Q" start="27" end="27"/>
+    <field name="V" start="28" end="28"/>
+    <field name="C" start="29" end="29"/>
+    <field name="Z" start="30" end="30"/>
+    <field name="N" start="31" end="31"/>
+  </flags>
+  <reg name="cpsr" ida_name="psr" regnum="33" offset="264" bitsize="32" type="arm_cpsr" group="general"/>
+  <!--General Purpose Registers (Low 32-bits)-->
+  <reg name="w0" regnum="34" offset="0" bitsize="32" group="general"/>
+  <reg name="w1" regnum="35" offset="8" bitsize="32" group="general"/>
+  <reg name="w2" regnum="36" offset="16" bitsize="32" group="general"/>
+  <reg name="w3" regnum="37" offset="24" bitsize="32" group="general"/>
+  <reg name="w4" regnum="38" offset="32" bitsize="32" group="general"/>
+  <reg name="w5" regnum="39" offset="40" bitsize="32" group="general"/>
+  <reg name="w6" regnum="40" offset="48" bitsize="32" group="general"/>
+  <reg name="w7" regnum="41" offset="56" bitsize="32" group="general"/>
+  <reg name="w8" regnum="42" offset="64" bitsize="32" group="general"/>
+  <reg name="w9" regnum="43" offset="72" bitsize="32" group="general"/>
+  <reg name="w10" regnum="44" offset="80" bitsize="32" group="general"/>
+  <reg name="w11" regnum="45" offset="88" bitsize="32" group="general"/>
+  <reg name="w12" regnum="46" offset="96" bitsize="32" group="general"/>
+  <reg name="w13" regnum="47" offset="104" bitsize="32" group="general"/>
+  <reg name="w14" regnum="48" offset="112" bitsize="32" group="general"/>
+  <reg name="w15" regnum="49" offset="120" bitsize="32" group="general"/>
+  <reg name="w16" regnum="50" offset="128" bitsize="32" group="general"/>
+  <reg name="w17" regnum="51" offset="136" bitsize="32" group="general"/>
+  <reg name="w18" regnum="52" offset="144" bitsize="32" group="general"/>
+  <reg name="w19" regnum="53" offset="152" bitsize="32" group="general"/>
+  <reg name="w20" regnum="54" offset="160" bitsize="32" group="general"/>
+  <reg name="w21" regnum="55" offset="168" bitsize="32" group="general"/>
+  <reg name="w22" regnum="56" offset="176" bitsize="32" group="general"/>
+  <reg name="w23" regnum="57" offset="184" bitsize="32" group="general"/>
+  <reg name="w24" regnum="58" offset="192" bitsize="32" group="general"/>
+  <reg name="w25" regnum="59" offset="200" bitsize="32" group="general"/>
+  <reg name="w26" regnum="60" offset="208" bitsize="32" group="general"/>
+  <reg name="w27" regnum="61" offset="216" bitsize="32" group="general"/>
+  <reg name="w28" regnum="62" offset="224" bitsize="32" group="general"/>
+  <!--NEON Registers-->
+  <reg name="v0" regnum="63" offset="268" bitsize="128" group="vector"/>
+  <reg name="v1" regnum="64" offset="284" bitsize="128" group="vector"/>
+  <reg name="v2" regnum="65" offset="300" bitsize="128" group="vector"/>
+  <reg name="v3" regnum="66" offset="316" bitsize="128" group="vector"/>
+  <reg name="v4" regnum="67" offset="332" bitsize="128" group="vector"/>
+  <reg name="v5" regnum="68" offset="348" bitsize="128" group="vector"/>
+  <reg name="v6" regnum="69" offset="364" bitsize="128" group="vector"/>
+  <reg name="v7" regnum="70" offset="380" bitsize="128" group="vector"/>
+  <reg name="v8" regnum="71" offset="396" bitsize="128" group="vector"/>
+  <reg name="v9" regnum="72" offset="412" bitsize="128" group="vector"/>
+  <reg name="v10" regnum="73" offset="428" bitsize="128" group="vector"/>
+  <reg name="v11" regnum="74" offset="444" bitsize="128" group="vector"/>
+  <reg name="v12" regnum="75" offset="460" bitsize="128" group="vector"/>
+  <reg name="v13" regnum="76" offset="476" bitsize="128" group="vector"/>
+  <reg name="v14" regnum="77" offset="492" bitsize="128" group="vector"/>
+  <reg name="v15" regnum="78" offset="508" bitsize="128" group="vector"/>
+  <reg name="v16" regnum="79" offset="524" bitsize="128" group="vector"/>
+  <reg name="v17" regnum="80" offset="540" bitsize="128" group="vector"/>
+  <reg name="v18" regnum="81" offset="556" bitsize="128" group="vector"/>
+  <reg name="v19" regnum="82" offset="572" bitsize="128" group="vector"/>
+  <reg name="v20" regnum="83" offset="588" bitsize="128" group="vector"/>
+  <reg name="v21" regnum="84" offset="604" bitsize="128" group="vector"/>
+  <reg name="v22" regnum="85" offset="620" bitsize="128" group="vector"/>
+  <reg name="v23" regnum="86" offset="636" bitsize="128" group="vector"/>
+  <reg name="v24" regnum="87" offset="652" bitsize="128" group="vector"/>
+  <reg name="v25" regnum="88" offset="668" bitsize="128" group="vector"/>
+  <reg name="v26" regnum="89" offset="684" bitsize="128" group="vector"/>
+  <reg name="v27" regnum="90" offset="700" bitsize="128" group="vector"/>
+  <reg name="v28" regnum="91" offset="716" bitsize="128" group="vector"/>
+  <reg name="v29" regnum="92" offset="732" bitsize="128" group="vector"/>
+  <reg name="v30" regnum="93" offset="748" bitsize="128" group="vector"/>
+  <reg name="v31" regnum="94" offset="764" bitsize="128" group="vector"/>
+  <reg name="fpsr" regnum="95" offset="780" bitsize="32"/>
+  <reg name="fpcr" regnum="96" offset="784" bitsize="32"/>
+  <!--Floating point registers (Single Precision)-->
+  <reg name="s0" regnum="97" offset="268" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s1" regnum="98" offset="284" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s2" regnum="99" offset="300" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s3" regnum="100" offset="316" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s4" regnum="101" offset="332" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s5" regnum="102" offset="348" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s6" regnum="103" offset="364" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s7" regnum="104" offset="380" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s8" regnum="105" offset="396" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s9" regnum="106" offset="412" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s10" regnum="107" offset="428" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s11" regnum="108" offset="444" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s12" regnum="109" offset="460" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s13" regnum="110" offset="476" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s14" regnum="111" offset="492" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s15" regnum="112" offset="508" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s16" regnum="113" offset="524" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s17" regnum="114" offset="540" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s18" regnum="115" offset="556" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s19" regnum="116" offset="572" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s20" regnum="117" offset="588" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s21" regnum="118" offset="604" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s22" regnum="119" offset="620" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s23" regnum="120" offset="636" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s24" regnum="121" offset="652" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s25" regnum="122" offset="668" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s26" regnum="123" offset="684" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s27" regnum="124" offset="700" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s28" regnum="125" offset="716" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s29" regnum="126" offset="732" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s30" regnum="127" offset="748" bitsize="32" group="float" encoding="ieee754"/>
+  <reg name="s31" regnum="128" offset="764" bitsize="32" group="float" encoding="ieee754"/>
+  <!--Floating point registers (Double Precision)-->
+  <reg name="d0" regnum="129" offset="268" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d1" regnum="130" offset="284" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d2" regnum="131" offset="300" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d3" regnum="132" offset="316" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d4" regnum="133" offset="332" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d5" regnum="134" offset="348" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d6" regnum="135" offset="364" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d7" regnum="136" offset="380" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d8" regnum="137" offset="396" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d9" regnum="138" offset="412" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d10" regnum="139" offset="428" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d11" regnum="140" offset="444" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d12" regnum="141" offset="460" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d13" regnum="142" offset="476" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d14" regnum="143" offset="492" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d15" regnum="144" offset="508" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d16" regnum="145" offset="524" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d17" regnum="146" offset="540" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d18" regnum="147" offset="556" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d19" regnum="148" offset="572" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d20" regnum="149" offset="588" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d21" regnum="150" offset="604" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d22" regnum="151" offset="620" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d23" regnum="152" offset="636" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d24" regnum="153" offset="652" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d25" regnum="154" offset="668" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d26" regnum="155" offset="684" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d27" regnum="156" offset="700" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d28" regnum="157" offset="716" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d29" regnum="158" offset="732" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d30" regnum="159" offset="748" bitsize="64" group="float" encoding="ieee754"/>
+  <reg name="d31" regnum="160" offset="764" bitsize="64" group="float" encoding="ieee754"/>
+  <!--FP/Exception State Registers-->
+  <reg name="far" regnum="161" offset="788" bitsize="64"/>
+  <reg name="esr" regnum="162" offset="796" bitsize="32"/>
+  <reg name="exception" regnum="163" offset="800" bitsize="32"/>
+</feature>
+</target>

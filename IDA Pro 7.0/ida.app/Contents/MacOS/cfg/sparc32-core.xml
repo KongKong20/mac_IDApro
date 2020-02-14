@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!-- Copyright (C) 2007-2015 Free Software Foundation, Inc.
+
+     Copying and distribution of this file, with or without modification,
+     are permitted in any medium without royalty provided the copyright
+     notice and this notice are preserved.  
+     made on basis of power-core.xml and sh-tdep.c from GDB
+     -->
+
+<!DOCTYPE feature SYSTEM "gdb-target.dtd">
+<feature name="org.gnu.gdb.sparc.core" idatitle="General registers">
+  <reg name="g0" bitsize="32" type="uint32"/>
+  <reg name="g1" bitsize="32" type="stack_ptr"/>
+  <reg name="g2" bitsize="32" type="uint32"/>
+  <reg name="g3" bitsize="32" type="uint32"/>
+  <reg name="g4" bitsize="32" type="uint32"/>
+  <reg name="g5" bitsize="32" type="uint32"/>
+  <reg name="g6" bitsize="32" type="uint32"/>
+  <reg name="g7" bitsize="32" type="uint32"/>
+  <reg name="o0" bitsize="32" type="uint32"/>
+  <reg name="o1" bitsize="32" type="uint32"/>
+  <reg name="o2" bitsize="32" type="uint32"/>
+  <reg name="o3" bitsize="32" type="uint32"/>
+  <reg name="o4" bitsize="32" type="uint32"/>
+  <reg name="o5" bitsize="32" type="uint32"/>
+  <reg name="o6" bitsize="32" type="uint32"/>
+  <reg name="o7" bitsize="32" type="uint32"/>
+  <reg name="l0" bitsize="32" type="uint32"/>
+  <reg name="l1" bitsize="32" type="uint32"/>
+  <reg name="l2" bitsize="32" type="uint32"/>
+  <reg name="l3" bitsize="32" type="uint32"/>
+  <reg name="l4" bitsize="32" type="uint32"/>
+  <reg name="l5" bitsize="32" type="uint32"/>
+  <reg name="l6" bitsize="32" type="uint32"/>
+  <reg name="l7" bitsize="32" type="uint32"/>
+  <reg name="i0" bitsize="32" type="uint32"/>
+  <reg name="i1" bitsize="32" type="uint32"/>
+  <reg name="i2" bitsize="32" type="uint32"/>
+  <reg name="i3" bitsize="32" type="uint32"/>
+  <reg name="i4" bitsize="32" type="uint32"/>
+  <reg name="i5" bitsize="32" type="uint32"/>
+  <reg name="i6" bitsize="32" type="uint32"/>
+  <reg name="i7" bitsize="32" type="uint32"/>
+  <reg name="o0" bitsize="32" type="uint32"/>
+  <reg name="o1" bitsize="32" type="uint32"/>
+  <reg name="o2" bitsize="32" type="uint32"/>
+  <reg name="o3" bitsize="32" type="uint32"/>
+  <reg name="o4" bitsize="32" type="uint32"/>
+  <reg name="o5" bitsize="32" type="uint32"/>
+  <reg name="o6" bitsize="32" type="uint32"/>
+  <reg name="o7" bitsize="32" type="uint32"/>
+  <reg name="pc" bitsize="32" type="code_ptr"/>
+  <reg name="pr" bitsize="32" type="uint32"/>
+  <reg name="gbr" bitsize="32" type="uint32"/>
+  <reg name="vbr" bitsize="32" type="uint32"/>
+  <reg name="mach" bitsize="32" type="uint32"/>
+  <reg name="macl" bitsize="32" type="uint32"/>
+  <reg name="sr" bitsize="32" type="uint32"/>
+</feature>

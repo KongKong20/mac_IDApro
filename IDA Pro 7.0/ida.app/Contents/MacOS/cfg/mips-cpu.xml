@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- Copyright (C) 2007-2015 Free Software Foundation, Inc.
+
+     Copying and distribution of this file, with or without modification,
+     are permitted in any medium without royalty provided the copyright
+     notice and this notice are preserved.  -->
+
+<!DOCTYPE feature SYSTEM "gdb-target.dtd">
+<feature name="org.gnu.gdb.mips.cpu" idatitle="General registers">
+  <reg name="r0" ida_name="zero" bitsize="32" regnum="0"/>
+  <reg name="r1" ida_name="at" bitsize="32"/>
+  <reg name="r2" ida_name="v0" bitsize="32"/>
+  <reg name="r3" ida_name="v1" bitsize="32"/>
+  <reg name="r4" ida_name="a0" bitsize="32"/>
+  <reg name="r5" ida_name="a1" bitsize="32"/>
+  <reg name="r6" ida_name="a2" bitsize="32"/>
+  <reg name="r7" ida_name="a3" bitsize="32"/>
+  <reg name="r8" ida_name="t0" bitsize="32"/>
+  <reg name="r9" ida_name="t1" bitsize="32"/>
+  <reg name="r10" ida_name="t2" bitsize="32"/>
+  <reg name="r11" ida_name="t3" bitsize="32"/>
+  <reg name="r12" ida_name="t4" bitsize="32"/>
+  <reg name="r13" ida_name="t5" bitsize="32"/>
+  <reg name="r14" ida_name="t6" bitsize="32"/>
+  <reg name="r15" ida_name="t7" bitsize="32"/>
+  <reg name="r16" ida_name="s0" bitsize="32"/>
+  <reg name="r17" ida_name="s1" bitsize="32"/>
+  <reg name="r18" ida_name="s2" bitsize="32"/>
+  <reg name="r19" ida_name="s3" bitsize="32"/>
+  <reg name="r20" ida_name="s4" bitsize="32"/>
+  <reg name="r21" ida_name="s5" bitsize="32"/>
+  <reg name="r22" ida_name="s6" bitsize="32"/>
+  <reg name="r23" ida_name="s7" bitsize="32"/>
+  <reg name="r24" ida_name="t8" bitsize="32"/>
+  <reg name="r25" ida_name="t9" bitsize="32"/>
+  <reg name="r26" ida_name="k0" bitsize="32"/>
+  <reg name="r27" ida_name="k1" bitsize="32"/>
+  <reg name="r28" ida_name="gp" bitsize="32"/>
+  <reg name="r29" ida_name="sp" bitsize="32" type="stack_ptr"/>
+  <reg name="r30" ida_name="fp" bitsize="32" type="frame_ptr"/>
+  <reg name="r31" ida_name="ra" bitsize="32"/>
+  <!-- gap for 'status' (#32) -->
+  <reg name="lo" bitsize="32" regnum="33"/>
+  <reg name="hi" bitsize="32" regnum="34"/>
+  <!-- gap for 'badvaddr' (#35) and 'cause' (#36) -->
+  <reg name="pc" bitsize="32" regnum="37" type="code_ptr"/>
+</feature>
